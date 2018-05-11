@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.Properties;
 
 public class FileTest {
 
@@ -19,5 +20,10 @@ public class FileTest {
             System.out.println(files[j]);
             System.out.println(files[j].getParent());
         }
+    }
+
+    @Test
+    public void test2() {
+        System.out.println(System.getProperty("user.dir"));
     }
 }
