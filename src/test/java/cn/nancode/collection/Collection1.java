@@ -9,7 +9,7 @@ import java.util.*;
  * Set  元素无序，不可重复的集合
  * List  元素有序，可重复的集合
  * <p>
- * Map 接口 ：key-value对集合
+ * map 接口 ：key-value对集合
  */
 public class Collection1 {
 
