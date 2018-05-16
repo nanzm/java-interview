@@ -2,6 +2,8 @@ package cn.nancode.array;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 public class ArrayTest {
 
     @Test
@@ -12,5 +14,6 @@ public class ArrayTest {
         arr.add(2, 55);
         arr.add(3, 65);
         System.out.println(arr);
+
     }
 }
