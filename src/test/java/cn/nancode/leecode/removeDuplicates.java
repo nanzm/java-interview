@@ -6,21 +6,14 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /**
- * 示例 1:
- * 给定数组 nums = [1,1,2],
- * 函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。
- * 你不需要考虑数组中超出新长度后面的元素。
- * 示例 2:
- * 给定 nums = [0,0,1,1,1,2,2,3,3,4],
- * 函数应该返回新的长度 5, 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4。
- * 你不需要考虑数组中超出新长度后面的元素。
+ * https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/1/array/21/
  */
 public class removeDuplicates {
     public int fun(int[] A) {
         if (A.length < 2)
             return A.length;
 
-        //利用
+        //利用 两个游标
         int j = 0;
         int i = 1;
 

@@ -1,19 +1,39 @@
 package cn.nancode.thread;
 
+
 public class ThreadTest {
     public static void main(String[] args) {
-        Thread t = new code();
-        t.start();
-        System.out.println(t.getName());
+        Tickets tickets = new Tickets();
 
-
+        new Thread(tickets).start();
+        new Thread(tickets).start();
+        new Thread(tickets).start();
     }
 }
 
+class Tickets implements Runnable {
+    private int ticket = 100;
+    private Object obj = new Object();
 
-class code extends Thread {
     @Override
     public void run() {
+        while (true) {
 
+            synchronized (obj) {
+                if (ticket > 0) {
+//                    try {
+//                        Thread.sleep(100);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+                    System.out.println(Thread.currentThread().getName() + "   正在出票： " + ticket--);
+                }
+            }
+
+
+
+        }
     }
 }
+
+
